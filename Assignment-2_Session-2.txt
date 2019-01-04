@@ -1,0 +1,14 @@
+Assignment-2_Session-2
+
+Problem Statement
+
+1. Define matrix mymat by replicating the sequence 1:5 for 4 times and transforming into a 
+matrix, sum over rows and columns.
+
+Answer-
+mymat <- matrix(c(1:5), ncol=5, nrow = 4, byrow = TRUE)
+mymat
+x <- rowSums(mymat, na.rm = FALSE, dims = 1)
+y <- colSums(mymat, na.rm = FALSE, dims = 1)
+print(x)
+print(y)
